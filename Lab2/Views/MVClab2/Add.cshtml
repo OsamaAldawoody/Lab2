@@ -1,0 +1,21 @@
+﻿
+
+@model List<Lab2.Models.Courses>
+@{
+    //  ViewBag.Title = "Add";
+}
+
+<h2>ADd</h2>
+
+
+
+<table border="1" style="text-align:center; width:100%">
+    <tr>
+        <th>id</th>
+        <th>name</th> <
+        @foreach (var item in Model)
+        {
+        <tr><td>@item.id</td> <td>@item.name</td> </tr>
+    }
+    </table>
+
